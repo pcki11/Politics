@@ -117,7 +117,7 @@ window.run = function(){
 
 	var testResource = new Resource({
 		name: "Gold",
-		increment: 1e60
+		increment: 0.01s
 	});
 	system.addResource(testResource);
 
