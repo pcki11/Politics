@@ -1,0 +1,136 @@
+html, body {
+	height:100%;
+	width:100%;
+	margin:0;
+	padding:0;
+	font-family: "Lucida Console", Monaco, monospace;
+	font-size: 12px;
+}
+body {
+	display:flex;
+	flex-direction: column;
+	background-color: #395631;
+	color:#fff;
+}
+div {
+
+}
+::-webkit-scrollbar
+{
+  width: 2px;
+}
+::-webkit-scrollbar-track
+{
+  background: rgba(0, 0, 0, 0.1);
+}
+
+::-webkit-scrollbar-thumb
+{
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.button {
+	text-align: center;
+	cursor: pointer;
+	background-color: #740916;
+	border-radius: 4px;
+	user-select:none;
+}
+.button:hover {
+	background-color: #940011;
+}
+.button.disabled {
+	background-color: #5B282E;
+}
+.button:active {
+	background-color: #6D1E27;
+}
+
+.header {
+	height:120px;
+	padding:10px;
+	display: flex;
+	flex-direction: column;
+	background-color: #3E7031;
+}
+.header .title {
+	height:25px;
+	font-size: 16px;
+	font-weight: bold;
+}
+.header .status {
+	flex:1;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+}
+.header .status .item {
+	width: 120px;
+	height: 30px;
+	display: flex;
+	flex-direction: row;
+}
+.header .status .item .name {
+	flex: 1;
+	padding-right: 10px;
+}
+.header .status .item .value {
+	flex: 2;
+}
+.game {
+	flex:1;
+	display: flex;
+}
+.game .resources {
+	width:220px;
+	float:left;
+	padding: 10px;
+	overflow-y:auto;
+	background-color: #2F3D2B;
+}
+.game .resources .item {
+	height: 22px;
+	display: flex;
+	flex-direction: row;
+}
+.game .resources .item .name {
+	flex: 4;
+	padding-right: 10px;
+}
+.game .resources .item .value {
+	flex: 1;
+}
+.game .actions {
+	flex:1;
+	padding: 10px;
+	display: flex;
+	flex-direction: column;
+}
+.game .actions .progress {
+	height: 50px;
+}
+.game .actions .progress .description {
+	text-align: center;
+}
+.game .actions .progress .progressbar {
+	height:20px;
+	background-color:#740916;
+	border-radius: 3px;
+	border: 1px solid black;
+}
+.game .actions .decisions {
+	flex:1;
+	overflow-y:auto;
+	padding:10px;
+}
+.game .actions .decisions .item {
+	display: flex;
+	flex-direction: row;
+}
+.game .actions .decisions .item .name {
+	flex:1;
+}
+.game .actions .decisions .item .action {
+	width: 80px;
+	margin-left: 10px;
+}
