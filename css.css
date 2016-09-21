@@ -58,23 +58,23 @@ div {
 	font-size: 16px;
 	font-weight: bold;
 }
-.header .status {
+.header .properties {
 	flex:1;
 	display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
 }
-.header .status .item {
+.header .properties .item {
 	width: 120px;
 	height: 30px;
 	display: flex;
 	flex-direction: row;
 }
-.header .status .item .name {
+.header .properties .item .name {
 	flex: 1;
 	padding-right: 10px;
 }
-.header .status .item .value {
+.header .properties .item .value {
 	flex: 2;
 }
 .game {
